@@ -1,4 +1,5 @@
-[[queue]]
+# Control-arm override probe: queue 'check' runs the marker command
+[[queues]]
 name = "check"
-timeout_sec = 300
-command = "echo ok"
+commands = ["echo CASCO-OVERRIDE-MARKER"]
+timeout_sec = 60
