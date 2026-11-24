@@ -1,0 +1,10 @@
+# StarSling CI manifest - two benign probe queues
+[[queues]]
+name = "probe-alpha"
+commands = ["echo hi"]
+timeout_sec = 120
+
+[[queues]]
+name = "probe-beta"
+commands = ["sleep 20"]
+timeout_sec = 120
