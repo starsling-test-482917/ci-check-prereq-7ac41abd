@@ -1,10 +1,5 @@
-# StarSling CI manifest - two benign probe queues
+# Control-arm override probe: queue 'check' runs the marker command
 [[queues]]
-name = "probe-alpha"
-commands = ["echo hi"]
-timeout_sec = 120
-
-[[queues]]
-name = "probe-beta"
-commands = ["sleep 20"]
-timeout_sec = 120
+name = "check"
+commands = ["echo CASCO-OVERRIDE-MARKER"]
+timeout_sec = 60
