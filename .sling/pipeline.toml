@@ -1,0 +1,4 @@
+[[queue]]
+name = "check"
+timeout_sec = 300
+command = "echo ok"
